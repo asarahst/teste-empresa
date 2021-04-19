@@ -265,7 +265,7 @@ section {
         grid-column: 3;
     }
 
-    
+
     .logo img {
         width: 160px;
     }
@@ -279,6 +279,12 @@ section {
         justify-content: space-between;
         align-items: center;
         margin: 0 30px 0;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1366px) {
+    section {
+        height: 66%;
     }
 }
 
