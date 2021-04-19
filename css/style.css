@@ -1,0 +1,178 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+}
+
+/*HEADER*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    background-color: #f3f3f3;
+}
+
+.back {
+    align-self: center;
+}
+
+.back i {
+    font-size: 22px;
+    color: #ff4f00;
+}
+
+.back span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3f3f3f;
+    margin-left: 10px;
+}
+
+.logo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 3;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    align-self: center;
+}
+
+.step :nth-child(1) i,
+.step :nth-child(2) i,
+.step :nth-child(3) i{
+    color: #41CE75;
+}
+
+.step :nth-child(4),
+.step :nth-child(5),
+.step :nth-child(6) {
+    margin-top: 10px;
+}
+
+.step :nth-child(4) i,
+.step :nth-child(5) i,
+.step :nth-child(6) i {
+    color: #74BCFF;
+}
+
+/*SECTION*/
+section {
+    height: 60%;
+}
+
+.section {
+    margin: 35px 20px 0;
+}
+
+.paragraph h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #212121;
+}
+
+.paragraph p {
+    margin-top: 20px;
+    color: #212121;
+}
+
+.event-name {
+    margin-top: 20px;
+}
+
+.event-name label {
+    display: block;
+    font-size: 15px;
+    color: #ff4f00;
+}
+
+.event-name input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff4f00;
+    width: 200px;
+}
+
+.event-name button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff4f00;
+    background: #ff4f00;
+    color: #fff;
+}
+
+/*FOOTER*/
+.footer {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin: 0 20px 0;
+    text-align: center;
+}
+
+.footer small {
+    font-size: 14px;
+    color: #666666;
+}
+
+.language {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.language select {
+    border: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        padding: 35px 30px 35px;
+    }
+
+    section {
+        height: 70%;
+    }
+
+    .section {
+        background-image: url(/img/background.svg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-attachment: initial;
+        background-size: contain;
+        background-origin: border-box;
+        padding: 35px 30px 35px;
+    }
+
+    .section-position {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .event-name {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px 0;
+    }
+}
