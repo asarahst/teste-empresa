@@ -147,12 +147,12 @@ section {
         background-image: url(/img/background.svg);
         height: 100%;
         background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
+        background-position: 100% 39%;
         background-attachment: initial;
-        background-size: contain;
+        background-size: 85% 70%;
         background-origin: border-box;
-        padding: 35px 30px 35px;
+        padding: 0;
+        margin: 35px 30px 0;
     }
 
     .section-position {
@@ -175,4 +175,103 @@ section {
         align-items: center;
         margin: 0 30px 0;
     }
+}
+
+@media screen and (min-width:1025px) {
+    .container {
+        padding: 35px 30px 35px;
+        grid-template-columns: 1fr 60% 155px;
+        align-items: center;
+        align-content: center;
+        padding: 40px 30px 40px;
+        align-self: center;
+    }
+
+    section {
+        height: 75%;
+    }
+
+    .section {
+        background-image: url(/img/background.svg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 100% 39%;
+        background-attachment: initial;
+        background-size: 85% 70%;
+        background-origin: border-box;
+        padding: 0;
+        margin: 35px 30px 0;
+    }
+
+    .section-position {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .event-name {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .step {
+        display: flex;
+        grid-column: 2 / 3;
+        margin-top: 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        justify-content: space-around;
+    }
+
+    .step div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .step small {
+        font-size: 13px;
+        margin-left: 5px;
+        font-weight: bold;
+        color: #474748;
+
+    }
+
+    .step i {
+        font-size: 23px;
+    }
+
+    .step :nth-child(4),
+    .step :nth-child(5),
+    .step :nth-child(6) {
+    margin-top: 0;
+}
+
+    .logo {
+        grid-column: 3;
+    }
+
+    
+    .logo img {
+        width: 160px;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px 0;
+    }
+}
+
+@media screen and (min-width:1081px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+
 }
