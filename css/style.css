@@ -82,7 +82,7 @@ section {
 
 .paragraph h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #212121;
 
 }
@@ -90,6 +90,7 @@ section {
 .paragraph p {
     margin-top: 20px;
     color: #212121;
+    font-size: 18px;
 }
 
 .event-name {
