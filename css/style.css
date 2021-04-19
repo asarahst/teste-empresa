@@ -4,14 +4,19 @@ body {
 }
 
 /*HEADER*/
+
+header {
+    background-color: #f3f3f3;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 15px;
-    background-color: #f3f3f3;
+
 }
 
 .back {
+    cursor: pointer;
     align-self: center;
 }
 
@@ -213,14 +218,24 @@ section {
         grid-row-start: 2;
     }
 
+    .event-name input {
+        box-shadow: 1px 3px 6px 1px #bdbdbd;
+    }
+
+    .event-name button {
+        cursor: pointer;
+        box-shadow: 0px 3px 9px #f7b99d;
+    }
+
     .step {
         display: flex;
         grid-column: 2 / 3;
         margin-top: 0;
-        border-radius: 10px 0 0 10px;
-        padding-top: 13px;
-        padding-bottom: 13px;
+        border-radius: 20px 0 0 20px;
+        padding-top: 10px;
+        padding-bottom: 9px;
         justify-content: space-around;
+        box-shadow: 0px 1px 4px #a7a7a7;
     }
 
     .step div {
@@ -272,6 +287,12 @@ section {
         margin: 0 auto;
         max-width: 1200px;
     }
-    
 
+    .event-name input {
+        box-shadow: 1px 3px 6px 1px #bdbdbd;
+    }
+
+    .event-name button {
+        box-shadow: 0px 3px 9px #f7b99d;
+    }
 }
