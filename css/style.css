@@ -84,11 +84,14 @@ section {
     font-weight: bold;
     font-size: 20px;
     color: #212121;
+    text-shadow: 0 0 0.2em #cacaca, 0 0 0.2em #cacaca, 0 0 0.2em #cacaca;
+
 }
 
 .paragraph p {
     margin-top: 20px;
     color: #212121;
+    text-shadow: 0 0 0.2em #cacaca, 0 0 0.2em #cacaca, 0 0 0.2em #cacaca;
 }
 
 .event-name {
@@ -280,6 +283,10 @@ section {
         align-items: center;
         margin: 0 30px 0;
     }
+
+    .language {
+        padding-top: 0;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width:1366px) {
@@ -289,6 +296,19 @@ section {
 }
 
 @media screen and (min-width:1081px) {
+    .container {
+        padding: 40px 0 40px;
+    }
+
+    .section {
+        margin: 35px 0px 0;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+
     .wrapper {
         margin: 0 auto;
         max-width: 1200px;
