@@ -30,7 +30,6 @@ header {
     font-weight: bold;
     color: #3f3f3f;
     margin-left: 10px;
-    text-shadow: 0 0 0.1em #cacaca, 0 0 0.1em #cacaca, 0 0 0.1em #cacaca;
 }
 
 .logo {
@@ -85,14 +84,12 @@ section {
     font-weight: bold;
     font-size: 20px;
     color: #212121;
-    text-shadow: 0 0 0.1em #cacaca, 0 0 0.1em #cacaca, 0 0 0.1em #cacaca;
 
 }
 
 .paragraph p {
     margin-top: 20px;
     color: #212121;
-    text-shadow: 0 0 0.1em #cacaca, 0 0 0.1em #cacaca, 0 0 0.1em #cacaca;
 }
 
 .event-name {
